@@ -1,6 +1,6 @@
 # sourcemod_config
 
-No matter what game or operating system, there are some config files and plugins we need to be common among all source engine game files among all game servers. All of these are config files or platform agnostic plugins or libraries. 
+No matter what game or operating system, there are some config files and plugins we need to be common among all source engine game files among all game servers. All of these are config files or platform agnostic plugins or libraries. All of the following files are platform agnostic (works with windows or linux) and will be applied on top of the platform specific config.
 
 Sourcemod configs files
 
@@ -24,7 +24,30 @@ serverstatus-ll.smx
 This plugin does a quick diagnostic of the server and posts to the console "Sourcemod is running". This is used mostly to for development and testing.
 https://forums.alliedmods.net/showthread.php?t=294826
 
+Updater.smx
+A simple plugin that allows for plugin developers to have plugins updated automatically. 
+https://forums.alliedmods.net/showthread.php?p=1570806
+
 /cfg/
 
 sourcemod.cfg
 Another config file for sourcemod, the options on here allow the configureation of base plugins like reservedslots, voting, and chat flood protection. Its stock with the exception of "sm_cvar sv_hibernate_when_empty 0" to prevent hibernation. 
+
+
+Extensions
+These are files that are required by many plugins 
+
+SMLIB
+SMLib is a collection of over 300 function stocks for sourcemod written by the basic principle that every line of code should only exist one time.
+https://forums.alliedmods.net/showthread.php?t=148387
+https://github.com/bcserv/smlib/
+
+Socket
+Provide extra networking functionality to sourcemod scripts and plugins
+https://forums.alliedmods.net/showthread.php?t=67640
+
+Steamworks
+This plugin allows steamworks functions to sourcepwn. 
+https://forums.alliedmods.net/showthread.php?t=229556
+https://github.com/KyleSanderson/SteamWorks
+
